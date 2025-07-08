@@ -1,0 +1,163 @@
+:root {
+  --primary-bg-color: #f4f7f6;
+  --white-color: #ffffff;
+  --dark-color: #343a40;
+  --primary-color: #007bff;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --info-color: #17a2b8;
+}
+
+.d_dashboard_overview {
+  padding: 10px 2rem;
+  background-color: var(--primary-bg-color);
+}
+
+.d_dashboard_title {
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.d_summary_card {
+  border: none;
+  border-radius: 10px;
+  color: var(--button-color);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.d_summary_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.d_summary_card .card-body {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.d_card_icon {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+  opacity: 0.8;
+}
+
+.d_summary_card .card-title {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.d_summary_card .card-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.d_card_revenue {
+  background: linear-gradient(45deg, #007bff, #3395ff);
+}
+.d_card_orders {
+  background: linear-gradient(45deg, #28a745, #52b788);
+}
+.d_card_customers {
+  background: linear-gradient(45deg, #ffc107, #ffd54f);
+}
+.d_card_pending {
+  background: linear-gradient(45deg, #dc3545, #ef5350);
+}
+
+.d_chart_card,
+.d_products_card {
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.d_chart_card .card-title,
+.d_products_card .card-title {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.recharts-tooltip-wrapper {
+  background: var(--white-color) !important;
+  border: 1px solid #ddd !important;
+  border-radius: 5px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recharts-tooltip-label {
+  color: var(--dark-color) !important;
+}
+
+.d_product_list {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.d_product_item {
+  margin-bottom: 1rem;
+}
+
+.d_product_item h6 {
+  font-size: 0.9rem;
+  color: var(--dark-color);
+}
+
+.progress-bar {
+  background-color: var(--primary-color) !important;
+}
+
+.d_orders_table {
+  color: var(--dark-color);
+}
+
+.d_orders_table thead {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.d_orders_table tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+.d_status {
+  padding: 0.35rem 0.6rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.d_status_completed {
+  background-color: var(--success-color);
+}
+.d_status_pending {
+  background-color: var(--warning-color);
+  color: var(--dark-color);
+}
+.d_status_cancelled {
+  background-color: var(--danger-color);
+}
+
+@media only screen and (max-width: 1024px) {
+  .d_dashboard_title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .recharts-responsive-container {
+    height: 370px !important;
+  }
+  .recharts-wrapper {
+    max-height: 370px !important;
+  }
+}
